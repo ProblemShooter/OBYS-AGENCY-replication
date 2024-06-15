@@ -55,3 +55,18 @@ tl.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero4 h1",{
 
 })
 }
+
+function cursorAnimation(){
+    document.addEventListener("mousemove",function(dets){
+        gsap.to("#crs",{
+            left:dets.x,
+            top:dets.y,
+        })
+    })  
+    Shery.makeMagnet("#nav-part-2 h4");
+}
+
+loadingAnimation();
+cursorAnimation();
+
+
